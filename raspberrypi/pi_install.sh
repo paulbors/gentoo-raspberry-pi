@@ -8,13 +8,10 @@ ip=${ip:-192.168.1.217::192.168.1.1:255.255.255.0:rpi7:eth0:off}
 zoneInfo=${zoneInfo:-America/New_York}
 
 while [ $# -gt 0 ]; do
-
    if [[ $1 == *"--"* ]]; then
         param="${1/--/}"
         declare "$param"="$2"
-        # echo $1 $2 // Optional to see the parameter:value result
    fi
-
   shift
 done
 
@@ -94,6 +91,7 @@ echo
 echo "STEP 3: Install the arm64 stage 3 ..."
 echo
 
+mkdir /mnt/gentoo
 mount /dev/"${root}" /mnt/gentoo
 tar xpf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner -C /mnt/gentoo
 mkdir /mnt/gentoo/var/db/repos/gentoo
@@ -103,6 +101,7 @@ echo
 echo "STEP 4: Populating /boot ..."
 echo
 
+mkdir /mnt/gentoo/boot
 mount /dev/"${boot}" /mnt/gentoo/boot
 cp -rv ./firmware/boot/* /mnt/gentoo/boot
 cp ./linux/arch/arm64/boot/Image /mnt/gentoo/boot/kernel8.img
