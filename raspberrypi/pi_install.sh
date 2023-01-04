@@ -35,7 +35,7 @@ while true; do
   echo ""
   read -p "This will destroy the filesystem on $dev. Should we proceed? [Yes/No]: " yn
   case $yn in
-      [Yy]* ) make install; break;;
+      [Yy]* ) break;;
       [Nn]* ) exit;;
       * ) echo "Please answer yes or no.";;
   esac
