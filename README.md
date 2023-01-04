@@ -13,9 +13,9 @@ Currently the script does not create the first Gentoo user that can ssh into the
 ## Instalation
 
 1. Create Gentoo overlay \
-   Copy /raspberrypi/gentoo_overlay.sh to your ~/, and execute it as root. \
+   Copy ```/raspberrypi/gentoo_overlay.sh``` to your ```~/```, and execute it as root. \
    (look it over before you do as we take no responsibility for damaging your system).
 2. Install Gentoo and the Raspberry Pi \
-   Copy /raspberrypi/pi_install.sh to your ~/raspberrypi/, and execute it as root. \
+   Copy ```/raspberrypi/pi_install.sh``` to your ```~/raspberrypi/```, and execute it as root. \
    (look it over before you do as we take no responsibility for damaging your system).
 3. Once done, take the microSD card and let it boot your Pi. Enjoy!
