@@ -2,7 +2,7 @@
 
 Collection of scripts that will compile the kernel and configure Gentoo on a Raspberry Pi based on https://wiki.gentoo.org/wiki/Raspberry_Pi4_64_Bit_Install
 
-## Gentoo on Raspberry Pi
+## Gentoo Overlay on Raspberry Pi
 
 This repository has a collection of reusable scripts that will aid to compile from scratch Raspberry Pi's kernel and then create the bootable microSD card.
 
