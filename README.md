@@ -12,10 +12,7 @@ Currently the script does not create the first Gentoo user that can ssh into the
 
 ## Instalation
 
-1. Create Gentoo overlay
-
-TODO, add script that creates the overlay and compiles the kernel
-
-2. Install Gentoo and the Raspberry Pi
-
-Simply copy /raspberrypi/pi_install.sh to your ~/raspberrypi/, and execute it.
+1. Create Gentoo overlay \
+   ```TODO, add script that creates the overlay and compiles the kernel```
+2. Install Gentoo and the Raspberry Pi \
+   ```Simply copy /raspberrypi/pi_install.sh to your ~/raspberrypi/, and execute it.```
